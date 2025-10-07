@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All-Time Chillers - Café Coffee Day</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ccd-brown': '#8B4513',
+            'ccd-dark-brown': '#5C3317',
+            'ccd-light-brown': '#D2691E',
+            'ccd-cream': '#F5F5DC',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-red-600">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <span class="text-2xl font-bold text-red-600">Café Coffee Day</span>
+          </a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="store-locator.html" class="hover:text-red-600 transition">Café Finder</a>
+          <a href="cafe-menu.html" class="hover:text-red-600 transition">Cafe Menu</a>
+          <a href="e-shop.html" class="hover:text-red-600 transition">E-Shop</a>
+          <a href="about-us.html" class="hover:text-red-600 transition">About Us</a>
+          <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Login</button>
+        </div>
+
+        <!-- Mobile Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-red-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="store-locator.html" class="block px-4 py-3 hover:text-red-600">Café Finder</a>
+      <a href="cafe-menu.html" class="block px-4 py-3 hover:text-red-600">Cafe Menu</a>
+      <a href="e-shop.html" class="block px-4 py-3 hover:text-red-600">E-Shop</a>
+      <a href="about-us.html" class="block px-4 py-3 hover:text-red-600">About Us</a>
+      <div class="px-4 py-3">
+        <button class="w-full bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="bg-white py-16 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">All-Time Chillers</h1>
+    <p class="text-xl">Refreshing cold beverages perfect for any time</p>
+  </div>
+
+  <!-- Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="mb-8">
+        <h2 class="text-3xl font-bold mb-2">Cold Beverages</h2>
+        <p>Beat the heat with our refreshing collection</p>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Iced Latte -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKbzWur-qqbt3QbbitHpz4zkI1yFPpYZ1MAK8f8FYegME7MR_3_aSSX6ijA8qrr1WXF7M&usqp=CAU" alt="Iced Latte" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Iced Latte</h3>
+            <p class="mb-3">Smooth espresso with chilled milk and ice</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold">₹189</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cold Coffee -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://images.immediate.co.uk/production/volatile/sites/30/2016/06/IcedCoffeenew-8415cf7.jpg" alt="Cold Coffee" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Cold Coffee</h3>
+            <p class="mb-3">Classic chilled coffee with ice cream</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold">₹149</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mint Mojito -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_PhnQlW_jSWC8RGJb-KxFya483lJlChewg&s" alt="Mint Mojito" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Mint Mojito</h3>
+            <p class="mb-3">Refreshing mint with lime and soda</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold">₹129</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strawberry Smoothie -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://paxandbeneficia.com/cdn/shop/articles/ith-strawberry-smoothie-or-milkshake.webp?v=1689455555&width=480" alt="Strawberry Smoothie" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Strawberry Smoothie</h3>
+            <p class="mb-3">Creamy strawberry blend with yogurt</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold">₹169</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mango Cooler -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://img.freepik.com/free-photo/fresh-mango-smoothie_1339-1479.jpg?semt=ais_hybrid&w=740&q=80" alt="Mango Cooler" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Mango Cooler</h3>
+            <p class="mb-3">Fresh mango juice with ice</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold">₹139</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blueberry Shake -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://t3.ftcdn.net/jpg/01/19/09/62/360_F_119096259_ac9k2DfxpuHl0YfHxcYKNnpjOPGbsCkI.jpg" alt="Blueberry Shake" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Blueberry Shake</h3>
+            <p class="mb-3">Rich blueberry milkshake</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold">₹179</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Menu -->
+      <div class="mt-12 text-center">
+        <a href="cafe-menu.html" class="inline-block bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition font-semibold">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-red-700 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p>&copy; 2024 Café Coffee Day. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

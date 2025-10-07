@@ -1,1 +1,225 @@
-<p>hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Coffee Day - A Lot Can Happen Over Coffee</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ccd-red': '#e63946',
+            'ccd-light': '#f8f9fa',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-ccd-red">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50 text-ccd-red">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <img src="https://cdn.worldvectorlogo.com/logos/cafe-coffee-day.svg" alt="CCD Logo" class="w-10 h-10 mr-2">
+            <span class="text-2xl font-bold text-ccd-red">Café Coffee Day</span>
+          </a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="store-locator.html" class="hover:underline transition">All-Time Chillers</a>
+          <div class="relative group">
+            <button class="flex items-center hover:underline transition">
+              Cafe Menu
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 text-ccd-red">
+              <a href="cafe-menu.html" class="block px-4 py-2 hover:bg-ccd-light">All Menu</a>
+              <a href="hot-classics.html" class="block px-4 py-2 hover:bg-ccd-light">Hot Classics</a>
+              <a href="all-time-chillers.html" class="block px-4 py-2 hover:bg-ccd-light">All-Time Chillers</a>
+              <a href="nutritional-info.html" class="block px-4 py-2 hover:bg-ccd-light">Nutritional Info</a>
+            </div>
+          </div>
+          <a href="e-shop.html" class="hover:underline transition">E-Shop</a>
+          <a href="about-us.html" class="hover:underline transition">About Us</a>
+          <button class="bg-ccd-red text-white px-4 py-2 rounded-md hover:opacity-80 transition">Login</button>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t text-ccd-red">
+      <a href="store-locator.html" class="block px-4 py-3 hover:bg-ccd-light">Café Finder</a>
+      <div class="px-4 py-3">
+        <button id="mobile-submenu-btn" class="w-full text-left flex justify-between items-center">
+          Cafe Menu
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="mobile-submenu" class="hidden mt-2 ml-4 space-y-2">
+          <a href="cafe-menu.html" class="block hover:underline">All Menu</a>
+          <a href="hot-classics.html" class="block hover:underline">Hot Classics</a>
+          <a href="all-time-chillers.html" class="block hover:underline">All-Time Chillers</a>
+          <a href="nutritional-info.html" class="block hover:underline">Nutritional Info</a>
+        </div>
+      </div>
+      <a href="e-shop.html" class="block px-4 py-3 hover:bg-ccd-light">E-Shop</a>
+      <a href="about-us.html" class="block px-4 py-3 hover:bg-ccd-light">About Us</a>
+      <div class="px-4 py-3">
+        <button class="w-full bg-ccd-red text-white px-4 py-2 rounded-md hover:opacity-80 transition">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel (Images only, no text/buttons) -->
+  <div class="relative">
+    <div id="carousel" class="relative overflow-hidden">
+      <div id="carousel-track" class="flex transition-transform duration-500">
+        <div class="min-w-full h-96 md:h-[500px]">
+          <img src="https://www.cafecoffeeday.com/sites/default/files/Heritage-Banner-1920X760.jpg" alt="Coffee Moments" class="w-full h-full object-cover">
+        </div>
+        <div class="min-w-full h-96 md:h-[500px]">
+          <img src="https://www.cafecoffeeday.com/sites/default/files/1920x760%20%281%29.jpg" alt="New Flavors" class="w-full h-full object-cover">
+        </div>
+        <div class="min-w-full h-96 md:h-[500px]">
+          <img src="https://www.cafecoffeeday.com/sites/default/files/SB23-Website%20Banner-2.png" alt="Find Cafe" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Links -->
+  <section class="py-16 bg-white text-ccd-red">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Quick Links</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <a href="cafe-menu.html" class="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://www.cafecoffeeday.com/sites/default/files/What%2527sNew-Open-copy_0.gif" alt="What's New" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">What's New</h3>
+            <p>Discover our latest menu items and seasonal specials</p>
+          </div>
+        </a>
+
+        <a href="store-locator.html" class="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://vacayadviser.com/wp-content/uploads/2022/08/Coffee-Planet-Best-coffee-shop-in-Lahore-1024x613.jpg" alt="Find a Café" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Find a Café Near You</h3>
+            <p>Locate your nearest Café Coffee Day outlet</p>
+          </div>
+        </a>
+
+        <a href="e-shop.html" class="bg-white border rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://justlovecoffeefranchise.com/wp-content/uploads/2024/05/coffee-shop-trends-for-2024.jpg" alt="Shop Now" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Shop Now</h3>
+            <p>Browse our exclusive coffee blends and merchandise</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="py-16 bg-white text-ccd-red">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="border rounded-2xl p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Story</h2>
+            <p class="text-lg mb-6">From bean to cup, we ensure the finest quality coffee experience. Café Coffee Day has been brewing moments of joy since our inception.</p>
+            <a href="about-us.html" class="bg-ccd-red text-white px-6 py-3 rounded-full font-semibold hover:opacity-80 transition inline-block">Read Our Story</a>
+          </div>
+          <div class="flex justify-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWHvR4PAl5DI7Mm_GQwgkYY5_QmXlAC59udLxoBltgTvs0p0BemmJbwHgNHlTE8mgRsK8&usqp=CAU" alt="Our Story Image" class="rounded-xl shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-12 text-ccd-red">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Café Coffee Day</h3>
+          <img src="https://via.placeholder.com/100x50" alt="CCD Footer Logo" class="mb-2">
+          <p>A lot can happen over coffee</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="cafe-menu.html" class="hover:underline">Menu</a></li>
+            <li><a href="store-locator.html" class="hover:underline">Café Finder</a></li>
+            <li><a href="e-shop.html" class="hover:underline">E-Shop</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">About</h4>
+          <ul class="space-y-2">
+            <li><a href="about-us.html" class="hover:underline">About Us</a></li>
+            <li><a href="about-us.html" class="hover:underline">Our Story</a></li>
+            <li><a href="about-us.html" class="hover:underline">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Connect</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:opacity-70">FB</a>
+            <a href="#" class="hover:opacity-70">TW</a>
+            <a href="#" class="hover:opacity-70">IG</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t mt-8 pt-8 text-center">
+        <p>&copy; 2024 Café Coffee Day. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileSubmenuBtn = document.getElementById('mobile-submenu-btn');
+    const mobileSubmenu = document.getElementById('mobile-submenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileSubmenuBtn.addEventListener('click', () => {
+      mobileSubmenu.classList.toggle('hidden');
+    });
+
+    // Carousel Logic (Auto Transition Only)
+    let currentSlide = 0;
+    const track = document.getElementById('carousel-track');
+    const slides = track.children;
+    const totalSlides = slides.length;
+
+    function goToSlide(index) {
+      currentSlide = (index + totalSlides) % totalSlides;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    setInterval(() => {
+      goToSlide(currentSlide + 1);
+    }, 4000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutritional Info - Café Coffee Day</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-red-600">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="images/logo.png" alt="Café Coffee Day Logo" class="h-10 w-10">
+            <span class="text-2xl font-bold">Café Coffee Day</span>
+          </a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="store-locator.html" class="hover:underline">Café Finder</a>
+          <div class="relative group">
+            <button class="font-semibold flex items-center">
+              Cafe Menu
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-48 bg-white border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <a href="cafe-menu.html" class="block px-4 py-2 hover:bg-gray-100">All Menu</a>
+              <a href="hot-classics.html" class="block px-4 py-2 hover:bg-gray-100">Hot Classics</a>
+              <a href="all-time-chillers.html" class="block px-4 py-2 hover:bg-gray-100">All-Time Chillers</a>
+              <a href="nutritional-info.html" class="block px-4 py-2 font-semibold bg-gray-100">Nutritional Info</a>
+            </div>
+          </div>
+          <a href="e-shop.html" class="hover:underline">E-Shop</a>
+          <a href="about-us.html" class="hover:underline">About Us</a>
+          <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Login</button>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="md:hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <a href="store-locator.html" class="block px-4 py-3 hover:bg-gray-100">Café Finder</a>
+      <div class="px-4 py-3">
+        <button id="mobile-submenu-btn" class="w-full text-left font-semibold flex justify-between items-center">
+          Cafe Menu
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="mobile-submenu" class="mt-2 ml-4 space-y-2">
+          <a href="cafe-menu.html" class="block hover:underline">All Menu</a>
+          <a href="hot-classics.html" class="block hover:underline">Hot Classics</a>
+          <a href="all-time-chillers.html" class="block hover:underline">All-Time Chillers</a>
+          <a href="nutritional-info.html" class="block font-semibold">Nutritional Info</a>
+        </div>
+      </div>
+      <a href="e-shop.html" class="block px-4 py-3 hover:bg-gray-100">E-Shop</a>
+      <a href="about-us.html" class="block px-4 py-3 hover:bg-gray-100">About Us</a>
+      <div class="px-4 py-3">
+        <button class="w-full bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="bg-white py-16 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <img src=" https://blogs.csun.edu/nutritionexperts/wp-content/uploads/sites/67/2021/12/Nutrition-Expert-Banner-4-1024x303.png" alt="Nutrition Banner" class="mx-auto mb-6 rounded-lg shadow-md">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Nutritional Information</h1>
+      <p class="text-lg">Make informed choices with our detailed nutritional data</p>
+    </div>
+  </div>
+
+  <!-- Nutritional Data Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 space-y-12">
+      <!-- About -->
+      <div class="bg-gray-50 rounded-lg p-6">
+        <h2 class="text-2xl font-bold mb-4">About Our Nutritional Data</h2>
+        <p>
+          We believe in transparency and want you to make informed choices. All nutritional values are approximate and based on standard serving sizes. Values may vary depending on customization and preparation methods.
+        </p>
+      </div>
+
+      <!-- Example Table with image -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="bg-red-600 text-white p-4">
+          <h3 class="text-xl font-bold">Beverages - Hot Drinks</h3>
+        </div>
+        <div class="flex items-center space-x-4 p-4">
+          <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Us3JN8L1gK2fF-8wkWDsah35tMOy82M1Vw&s" alt="Cappuccino" class="h-24 w-24 rounded-lg shadow-md">
+          <p class="text-sm">Sample nutrition data for hot coffee beverages.</p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="px-6 py-3 text-left text-sm font-semibold">Item</th>
+                <th class="px-6 py-3 text-left text-sm font-semibold">Size</th>
+                <th class="px-6 py-3 text-left text-sm font-semibold">Calories</th>
+                <th class="px-6 py-3 text-left text-sm font-semibold">Protein (g)</th>
+                <th class="px-6 py-3 text-left text-sm font-semibold">Carbs (g)</th>
+                <th class="px-6 py-3 text-left text-sm font-semibold">Fat (g)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4">Cappuccino</td>
+                <td class="px-6 py-4">Regular</td>
+                <td class="px-6 py-4">120</td>
+                <td class="px-6 py-4">6</td>
+                <td class="px-6 py-4">11</td>
+                <td class="px-6 py-4">5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Allergen Info -->
+      <div class="mt-12 bg-gray-50 rounded-lg shadow-md p-6">
+        <h3 class="text-xl font-bold mb-4">Allergen Information</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <img src=" https://i0.wp.com/www.thecoffeeadvisors.com/wp-content/uploads/All-about-Caffeine-Allergies-min.png?fit=560%2C315&ssl=1" alt="Allergen Awareness" class="rounded-lg shadow-md">
+          <div>
+            <p class="mb-2"><span class="font-semibold">Contains Dairy:</span> All milk-based beverages, desserts</p>
+            <p class="mb-2"><span class="font-semibold">Contains Gluten:</span> Sandwiches, pastries, some desserts</p>
+            <p class="mb-2"><span class="font-semibold">Contains Nuts:</span> Some cakes and desserts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-red-600 text-white py-12 mt-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <img src="https://cdn.worldvectorlogo.com/logos/cafe-coffee-day.svg" alt="CCD Logo" class="mx-auto h-12 mb-4">
+      <p>&copy; 2024 Café Coffee Day. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileSubmenuBtn = document.getElementById('mobile-submenu-btn');
+    const mobileSubmenu = document.getElementById('mobile-submenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileSubmenuBtn.addEventListener('click', () => {
+      mobileSubmenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

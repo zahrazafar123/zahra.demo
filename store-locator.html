@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store Locator - Café Coffee Day</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-red-600">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Caf%C3%A9_Coffee_Day.svg/828px-Caf%C3%A9_Coffee_Day.svg.png"
+              alt="CCD Logo"
+              class="h-10 w-10 rounded-full"
+            />
+            <span class="text-2xl font-bold">Café Coffee Day</span>
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="store-locator.html" class="font-semibold">Café Finder</a>
+          <div class="relative group">
+            <button class="transition flex items-center">
+              Cafe Menu
+              <svg
+                class="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+            >
+              <a href="cafe-menu.html" class="block px-4 py-2 hover:bg-gray-100">All Menu</a>
+              <a href="hot-classics.html" class="block px-4 py-2 hover:bg-gray-100">Hot Classics</a>
+              <a href="all-time-chillers.html" class="block px-4 py-2 hover:bg-gray-100">All-Time Chillers</a>
+              <a href="nutritional-info.html" class="block px-4 py-2 hover:bg-gray-100">Nutritional Info</a>
+            </div>
+          </div>
+          <a href="e-shop.html" class="transition">E-Shop</a>
+          <a href="about-us.html" class="transition">About Us</a>
+          <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
+            Login
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="bg-white text-center py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Find a Café Near You</h1>
+      <p class="text-xl text-red-500">
+        Discover your nearest Café Coffee Day outlet
+      </p>
+
+      <!-- Hero Image -->
+      <img
+        src=" https://thefoodxp.com/wp-content/uploads/2020/07/Cafe-Coffee-Day-Store-1.jpg"
+        alt="Cafe Coffee Day Banner"
+        class="mx-auto mt-10 rounded-lg shadow-md"
+      />
+    </div>
+  </div>
+
+  <!-- Search Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <div class="mb-8 text-center">
+          <h2 class="text-2xl font-bold mb-4">Search for a Café</h2>
+          <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <input
+              type="text"
+              placeholder="Enter your city or area"
+              class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 max-w-md"
+            />
+            <button
+              class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition font-semibold"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media Section (moved and redesigned) -->
+  <div class="text-center py-10">
+    <h3 class="text-xl font-semibold mb-6">Follow Us</h3>
+    <div class="flex justify-center space-x-6">
+      <button
+        class="bg-white border border-red-600 text-red-600 p-4 rounded-full hover:bg-red-50 transition"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+          alt="Facebook"
+          class="h-6 w-6"
+        />
+      </button>
+      <button
+        class="bg-white border border-red-600 text-red-600 p-4 rounded-full hover:bg-red-50 transition"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+          alt="Twitter"
+          class="h-6 w-6"
+        />
+      </button>
+      <button
+        class="bg-white border border-red-600 text-red-600 p-4 rounded-full hover:bg-red-50 transition"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+          alt="Instagram"
+          class="h-6 w-6"
+        />
+      </button>
+      <button
+        class="bg-white border border-red-600 text-red-600 p-4 rounded-full hover:bg-red-50 transition"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+          alt="YouTube"
+          class="h-6 w-6"
+        />
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-red-50 py-16">
+    <div
+      class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 text-red-700"
+    >
+      <div>
+        <h3 class="text-xl font-bold mb-3">Business</h3>
+        <p>Franchise Opportunities</p>
+        <p>Corporate Partnerships</p>
+        <p>Careers</p>
+        <p>Investor Relations</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3">Shop</h3>
+        <p>Merchandise</p>
+        <p>Gift Cards</p>
+        <p>Coffee Mugs</p>
+        <p>Brewing Equipment</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3">Cafe Menu</h3>
+        <p>Hot Classics</p>
+        <p>All-Time Chillers</p>
+        <p>Snacks</p>
+        <p>Combos</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3">Quick Links</h3>
+        <p>Store Locator</p>
+        <p>Order Online</p>
+        <p>Offers & Promotions</p>
+        <p>Contact Support</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3">About Us</h3>
+        <p>Our Story</p>
+        <p>CSR Initiatives</p>
+        <p>Press & Media</p>
+        <p>Careers</p>
+      </div>
+    </div>
+
+    <p class="text-center mt-10 text-red-400">
+      © 2025 Café Coffee Day. All Rights Reserved.
+    </p>
+  </footer>
+</body>
+</html>

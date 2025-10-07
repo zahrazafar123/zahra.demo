@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Classics - Café Coffee Day</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ccd-brown': '#8B4513',
+            'ccd-dark-brown': '#5C3317',
+            'ccd-light-brown': '#D2691E',
+            'ccd-cream': '#F5F5DC',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-red-600">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <span class="text-2xl font-bold text-red-600">Café Coffee Day</span>
+          </a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="store-locator.html" class="hover:text-red-600 transition">Café Finder</a>
+          <a href="cafe-menu.html" class="hover:text-red-600 transition">Menu</a>
+          <a href="e-shop.html" class="hover:text-red-600 transition">E-Shop</a>
+          <a href="about-us.html" class="hover:text-red-600 transition">About Us</a>
+          <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Login</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="bg-red-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Hot Classics</h1>
+      <p class="text-xl">Delicious hot food items to warm your soul</p>
+    </div>
+  </div>
+
+  <!-- Menu Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="mb-8">
+        <h2 class="text-3xl font-bold mb-2">Our Hot Food Menu</h2>
+        <p>Freshly prepared hot items to satisfy your cravings</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Grilled Sandwich -->
+        <div class="bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrpSydzQ0x_WHbqgHZK3A10geOTLWu7D3lCg&s" alt="Grilled Sandwich" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Grilled Sandwich</h3>
+            <p class="mb-3">Classic grilled sandwich with vegetables and cheese</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-red-600">₹149</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paneer Tikka Sandwich -->
+        <div class="bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXt5BThQA8vUA5qAyPT1RSV-YC37k5BEwFiw&s" alt="Paneer Tikka Sandwich" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Paneer Tikka Sandwich</h3>
+            <p class="mb-3">Spicy paneer tikka in toasted bread</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-red-600">₹179</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chicken Burger -->
+        <div class="bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyfUF49GWv1V4lBwW1aeSmvIiLjw3MB89LXw&s" alt="Chicken Burger" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Chicken Burger</h3>
+            <p class="mb-3">Juicy chicken patty with fresh veggies</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-red-600">₹199</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veg Pizza -->
+        <div class="bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIUctzwUmgwESsppNGJ70fcK-bue-jmGyuKw&s" alt="Veg Pizza" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Veg Pizza</h3>
+            <p class="mb-3">7-inch personal pizza with vegetables</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-red-600">₹219</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pasta -->
+        <div class="bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuprFXFK7qCi9QqXKFaEdkJenQLxRkE8MfjQ&s" alt="Pasta Arrabiata" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Pasta Arrabiata</h3>
+            <p class="mb-3">Spicy tomato pasta with herbs</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-red-600">₹189</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- French Fries -->
+        <div class="bg-white border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9veo1sLUUFGl7SkPw1jWkJ_avgNFgtXLLQ&s" alt="French Fries" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">French Fries</h3>
+            <p class="mb-3">Crispy golden fries with dips</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-red-600">₹99</span>
+              <button class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="cafe-menu.html" class="inline-block bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition font-semibold">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-red-700 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p>&copy; 2024 Café Coffee Day. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

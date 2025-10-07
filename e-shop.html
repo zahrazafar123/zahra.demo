@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Coffee Day - Menu Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ccd-red': '#FF0000',
+            'ccd-white': '#FFFFFF'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-ccd-white text-ccd-red font-sans">
+  
+  <!-- Logo Section -->
+  <header class="text-center p-6">
+    <img src="https://cdn.worldvectorlogo.com/logos/cafe-coffee-day.svg" 
+         alt="Café Coffee Day Logo" 
+         class="mx-auto w-32 mb-4">
+    <h1 class="text-3xl font-bold">Welcome to Café Coffee Day</h1>
+    <p class="text-lg">A Lot Can Happen Over Coffee</p>
+  </header>
+
+  <!-- Hero Image -->
+  <section class="text-center p-6">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" 
+         alt="Coffee Cup" 
+         class="mx-auto rounded-lg shadow-lg w-80 mb-4">
+    <h2 class="text-2xl font-semibold">Freshly Brewed Coffee Awaits You</h2>
+  </section>
+
+  <!-- Menu Gallery Section -->
+  <section class="p-8 text-center">
+    <h2 class="text-2xl font-bold mb-8">Our Signature Menu</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-center items-center">
+
+      <!-- Cappuccino -->
+      <div class="transition-transform transform hover:scale-105 duration-300">
+        <a href="https://www.google.com/search?q=cappuccino+coffee&tbm=isch" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG" 
+               alt="Cappuccino" 
+               class="mx-auto rounded-xl shadow-lg w-64 h-64 object-cover mb-2">
+        </a>
+        <p class="font-semibold text-lg">Cappuccino</p>
+      </div>
+
+      <!-- Cold Coffee -->
+      <div class="transition-transform transform hover:scale-105 duration-300">
+        <a href="https://www.google.com/search?q=cold+coffee&tbm=isch" target="_blank">
+          <img src=" https://www.cafecoffeeday.com/thelounge/images/ccd-lounge-cold-side.jpg" 
+               alt="Cold Coffee" 
+               class="mx-auto rounded-xl shadow-lg w-64 h-64 object-cover mb-2">
+        </a>
+        <p class="font-semibold text-lg">Cold Coffee</p>
+      </div>
+
+      <!-- Chocolate Cake -->
+      <div class="transition-transform transform hover:scale-105 duration-300">
+        <a href="https://www.google.com/search?q=chocolate+cake&tbm=isch" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oa7X5uum_MErb3mqpZTYrwsVYMrdJvLIbA&s" 
+               alt="Chocolate Cake" 
+               class="mx-auto rounded-xl shadow-lg w-64 h-64 object-cover mb-2">
+        </a>
+        <p class="font-semibold text-lg">Chocolate Cake</p>
+      </div>
+
+      <!-- Sandwich -->
+      <div class="transition-transform transform hover:scale-105 duration-300">
+        <a href="https://www.google.com/search?q=sandwich&tbm=isch" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrpSydzQ0x_WHbqgHZK3A10geOTLWu7D3lCg&s" 
+               alt="Sandwich" 
+               class="mx-auto rounded-xl shadow-lg w-64 h-64 object-cover mb-2">
+        </a>
+        <p class="font-semibold text-lg">Sandwich</p>
+      </div>
+
+      <!-- Espresso -->
+      <div class="transition-transform transform hover:scale-105 duration-300">
+        <a href="https://www.google.com/search?q=espresso+coffee&tbm=isch" target="_blank">
+          <img src="https://content.jdmagicbox.com/v2/comp/mumbai/f4/022pxx22.xx22.170316100046.h6f4/catalogue/cafe-coffee-day-andheri-kurla-road-sakinaka-mumbai-1qi7s2n.jpg" 
+               alt="Espresso" 
+               class="mx-auto rounded-xl shadow-lg w-64 h-64 object-cover mb-2">
+        </a>
+        <p class="font-semibold text-lg">Espresso</p>
+      </div>
+
+      <!-- Donuts -->
+      <div class="transition-transform transform hover:scale-105 duration-300">
+        <a href="https://www.google.com/search?q=donuts&tbm=isch" target="_blank">
+          <img src="https://www.shutterstock.com/image-photo/assorted-glazed-fried-donuts-coffee-600nw-2588610371.jpg" 
+               alt="Donuts" 
+               class="mx-auto rounded-xl shadow-lg w-64 h-64 object-cover mb-2">
+        </a>
+        <p class="font-semibold text-lg">Donuts</p>
+      </div>
+
+      <!-- Muffin -->
+      <div class="transition-transform transform hover:scale-105 duration-300">
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqDawkUMbSplxcltWUFKoTWyYIfIe_6Q6eA&s" target="_blank">
+          <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqDawkUMbSplxcltWUFKoTWyYIfIe_6Q6eA&s" 
+               alt="Muffin" 
+               class="mx-auto rounded-xl shadow-lg w-64 h-64 object-cover mb-2">
+        </a>
+        <p class="font-semibold text-lg">Muffin</p>
+      </div>
+
+      <!-- Brownie -->
+      <div class="transition-transform transform hover:scale-105 duration-300">
+        <a href="https://www.google.com/search?q=chocolate+brownie&tbm=isch" target="_blank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWKAr6Oup6HNs3XadBdxIrxdPlXPJvIe14AVh5Zhu3OGCx2fJNARyaIVeBwZvsNyqGCSE&usqp=CAU " 
+               alt="Brownie" 
+               class="mx-auto rounded-xl shadow-lg w-64 h-64 object-cover mb-2">
+        </a>
+        <p class="font-semibold text-lg">Brownie</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6">
+    <p>&copy; 2025 Café Coffee Day | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Café Coffee Day</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ccd-red': '#FF0000',
+            'ccd-white': '#FFFFFF',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-ccd-white text-ccd-red">
+  <!-- NAVBAR -->
+  <nav class="bg-ccd-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center">
+            <!-- Logo image -->
+            <img src=" https://cdn.worldvectorlogo.com/logos/cafe-coffee-day.svg" alt="Café Coffee Day Logo" class="h-10 w-auto mr-2">
+            <span class="text-2xl font-bold">Café Coffee Day</span>
+          </a>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="store-locator.html" class="hover:underline">Café Finder</a>
+          <div class="relative group">
+            <button class="flex items-center hover:underline">
+              Cafe Menu
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 text-red-600">
+              <a href="cafe-menu.html" class="block px-4 py-2 hover:bg-gray-100">All Menu</a>
+              <a href="hot-classics.html" class="block px-4 py-2 hover:bg-gray-100">Hot Classics</a>
+              <a href="all-time-chillers.html" class="block px-4 py-2 hover:bg-gray-100">All-Time Chillers</a>
+              <a href="nutritional-info.html" class="block px-4 py-2 hover:bg-gray-100">Nutritional Info</a>
+            </div>
+          </div>
+          <a href="e-shop.html" class="hover:underline">E-Shop</a>
+          <a href="about-us.html" class="font-semibold underline">About Us</a>
+          <button class="bg-ccd-red text-white px-4 py-2 rounded-md hover:opacity-80 transition">Login</button>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="bg-ccd-white text-center py-16">
+    <img src=" https://www.cafecoffeeday.com/sites/default/files/Website%20Banner-App%20Upgrade_0.png" alt="Coffee Banner" class="mx-auto mb-6 rounded-lg shadow-lg w-4/5 md:w-3/4 lg:w-2/3">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Story</h1>
+    <p class="text-xl">A lot can happen over coffee</p>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Who We Are</h2>
+          <p class="mb-4 leading-relaxed">
+            Café Coffee Day is India's favorite coffee chain, bringing people together over a perfect cup of coffee.
+          </p>
+          <p class="mb-4 leading-relaxed">
+            With cafés across the country, we serve freshly brewed coffee, delicious food, and create spaces where conversations flow.
+          </p>
+          <p class="leading-relaxed">
+            Our commitment to quality and service has made us a household name.
+          </p>
+        </div>
+        <div class="flex items-center justify-center">
+          <!-- Wider image -->
+          <img src="https://media.licdn.com/dms/image/v2/D4D12AQFu30UwX7AFzQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1725963669297?e=2147483647&v=beta&t=4ygdJ8r9AhwF36jR1R87DyuHD6s92SbSpl020v2aMHU" alt="About Us" class="rounded-2xl h-96 w-full object-cover shadow-lg">
+        </div>
+      </div>
+
+      <!-- Bean to Cup Journey -->
+      <div class="bg-white border rounded-2xl p-8 md:p-12 mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center">Bean to Cup Journey</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdNhSsyZhJ6zZX4Q_FalbeM-bXCMTNhAQHw&s" alt="Sourcing Coffee Beans" class="w-28 h-28 mx-auto mb-4 rounded-full shadow">
+            <h3 class="text-xl font-bold mb-2">Sourcing</h3>
+            <p>We source the finest coffee beans from premium estates across India</p>
+          </div>
+          <div class="text-center">
+            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnrIbjLkQcsJtLFxvQwGvd-OtplVIhloNlA&s" alt="Coffee Roasting" class="w-28 h-28 mx-auto mb-4 rounded-full shadow">
+            <h3 class="text-xl font-bold mb-2">Roasting</h3>
+            <p>Expert roasting techniques to bring out the perfect flavor and aroma</p>
+          </div>
+          <div class="text-center">
+            <img src="https://pbs.twimg.com/media/EFJibYwVUAY7K6R.jpg " alt="Serving Coffee" class="w-28 h-28 mx-auto mb-4 rounded-full shadow">
+            <h3 class="text-xl font-bold mb-2">Serving</h3>
+            <p>Freshly brewed coffee served with care and passion in every cup</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission and Vision -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white border-2 border-red-600 rounded-lg p-8">
+          <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+          <p class="leading-relaxed">
+            To provide an exceptional coffee experience while creating warm, welcoming spaces where people connect.
+          </p>
+        </div>
+        <div class="bg-white border-2 border-red-600 rounded-lg p-8">
+          <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+          <p class="leading-relaxed">
+            To be India's most loved café chain, known for excellence in coffee, food, and service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREERS -->
+  <section class="bg-red-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">Join Our Team</h2>
+      <div class="text-center max-w-3xl mx-auto">
+        <p class="text-lg mb-6">
+          Be part of a passionate team dedicated to creating amazing coffee experiences.
+        </p>
+        <button class="bg-white text-red-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Explore Careers</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-red-600 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h3 class="text-xl font-bold mb-4">Café Coffee Day</h3>
+      <p class="mb-2">A lot can happen over coffee</p>
+      <img src=" https://cdn.worldvectorlogo.com/logos/cafe-coffee-day.svg" alt="Footer Logo" class="mx-auto h-16 w-16 md:h-20 md:w-20">
+      <div class="mt-6 text-sm">&copy; 2024 Café Coffee Day. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileSubmenuBtn = document.getElementById('mobile-submenu-btn');
+    const mobileSubmenu = document.getElementById('mobile-submenu');
+
+    if(mobileMenuBtn){
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+    if(mobileSubmenuBtn){
+      mobileSubmenuBtn.addEventListener('click', () => {
+        mobileSubmenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
